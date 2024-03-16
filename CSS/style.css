@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Borel&family=Bricolage+Grotesque&family=Pacifico&family=Poppins:wght@300;400;500&family=Preahvihear&family=Raleway:wght@300&family=Roboto:wght@300;500&family=Rubik:wght@300;400&family=Ubuntu:wght@500&display=swap');
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+}
+
+html::-webkit-scrollbar {
+    width: 5px;
+    /* color: transparent; */
+    background: rgb(209, 204, 255);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(152, 152, 255);
+    width: 2px;
+    border-radius: 25px;
+}
+
+body {
+    background-color: rgb(231, 231, 255);
+
+}
+
+
+.main_container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 30%;
+    padding: 10px 0px;
+    background-color: navy;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 8px 7px 10px -5px #6b6a6a;
+}
+
+.container>h1 {
+    color: #fff;
+    padding: 5px 20px;
+    border-bottom: 2px solid #fff;
+    font-size: 18px;
+    word-spacing: 0.8px;
+    letter-spacing: 0.8px;
+}
+
+.container>h1>span {
+    color: rgb(201, 201, 255);
+    font-size: 24px;
+}
+
+.login-box {
+    width: 100%;
+    padding: 10px;
+}
+
+.login-detail-ul {
+    list-style: none;
+    padding: 10px;
+
+}
+
+.login-detail-ul-li {
+    padding: 5px;
+}
+
+.login-detail-ul-li input {
+    padding: 8px 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+}
+
+.submit-box {
+    width: 100%;
+    padding: 2px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-btn {
+    padding: 8px 40px;
+    margin: 0px 0px 15px 0px;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    font-weight: bold;
+    color: navy;
+    cursor: pointer;
+    transition: 0.2s;
+    letter-spacing: 0.5px;
+}
+
+.login-btn:hover {
+    border: 1px solid rgb(204, 204, 255);
+    background-color: navy;
+    color: #fff;
+
+}
+
+
+
+/* profile css  */
+
+.profile-container {
+    width: 90%;
+    padding: 10px 10px;
+    /* background-color: navy; */
+    border-radius: 5px;
+    border-bottom: 5px solid navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.profile-area {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px -5px #ddd;
+}
+
+.dp-area {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px dotted #ddd;
+}
+
+.dp-box {
+    width: 200px;
+    height: 200px;
+    border: 0px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-settings {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 9;
+    color: rgba(231, 231, 255, 0);
+    /* color: rgb(255, 255, 255); */
+    /* opacity: 0; */
+    transition: all ease-in-out 0.2s;
+    transform: rotate(0.8turn);
+}
+
+.profile-settings button {
+    font-size: 0px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: none;
+    transition: all ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.dp-box:hover .profile-settings {
+    width: 200px;
+    height: 200px;
+    background-color: #0000009e;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: rotate(1turn);
+}
+
+.dp-box:hover .profile-settings button {
+    font-size: 30px;
+}
+
+.profile-settings button:hover {
+    color: rgb(204, 204, 252);
+}
+
+.profile-name {
+    padding: 5px 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.profile-name-span {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+}
+
+.username-span {
+    display: block;
+}
+
+
+/* bio  */
+.bio-area {
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-area p {
+    text-align: center;
+}
+
+
+/* feed css */
+.feed-container {
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* feed header  */
+.feed-header {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px -5px #000000;
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+}
+
+.feed-header-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.feed-header-ul-li {
+    width: 25%;
+    text-align: center;
+    padding: 5px 0px;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    transition: 0.2s;
+    color: #ddd;
+}
+
+.feed-header-ul-li:hover {
+    border-bottom: 2px solid #8080fcac;
+    color: #8080fcac;
+}
+
+#feed-header-ul-li-all {
+    color: navy;
+    font-weight: bold;
+}
+
+.feed-header-ul-li-bottom-border {
+    border-bottom: 2px solid navy;
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    transition: 0.5s;
+}
+
+/* feed area  */
+.feed-area {
+    width: 100%;
+    max-height: 150vh;
+    min-height: 85vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    margin-top: 5px;
+    padding: 10px 0px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 10px -5px #ddd;
+    position: relative;
+}
+
+.feed-box {
+    width: 100%;
+    transition: 0.5s;
+    position: absolute;
+    left: 0;
+    padding-bottom: 11px;
+}
+
+.feed-for-images {
+    left: 100%;
+}
+
+.feed-for-shorties {
+    left: 200%;
+}
+
+.feed-for-videos {
+    left: 300%;
+}
+
+.feed-box-ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feed-box-ul-li {
+    width: 25%;
+    height: 40vh;
+    border: 2px solid rgb(241, 241, 255);
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+
+.feed-box-ul-li:nth-child(1) {
+    background: url("../Image/shriganesh1.jpg") center;
+    background-size: cover;
+}
+
+.feed-box-ul-li:nth-child(2) {
+    background: url("https://images.pexels.com/photos/3946868/pexels-photo-3946868.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center;
+    background-size: cover;
+}
+
+.feed-box-ul-li:nth-child(3) {
+    background: url("https://images.pexels.com/photos/2896474/pexels-photo-2896474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center;
+    background-size: cover;
+}
+
+.feed-box-ul-li:nth-child(4) {
+    background: url("https://images.pexels.com/photos/7685498/pexels-photo-7685498.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center;
+    background-size: cover;
+}
+
+.feed-box-ul-li:nth-child(5) {
+    background: url("https://images.pexels.com/photos/8818730/pexels-photo-8818730.jpeg?auto=compress&cs=tinysrgb&w=600") center;
+    background-size: cover;
+}
+
+.feed-box-ul-li:nth-child(6) {
+    background: url("https://images.pexels.com/photos/9998331/pexels-photo-9998331.jpeg?auto=compress&cs=tinysrgb&w=600") center;
+    background-size: cover;
+}
+
+.feed-box-ul-li:nth-child(7) {
+    background: url("https://images.pexels.com/photos/2280845/pexels-photo-2280845.jpeg?auto=compress&cs=tinysrgb&w=600") center;
+    background-size: cover;
+}
+
+.feed-box-ul-li:nth-child(8) {
+    background: url("https://images.pexels.com/photos/7685848/pexels-photo-7685848.jpeg?auto=compress&cs=tinysrgb&w=600") center;
+    background-size: cover;
+}
+
+.feed-box-ul-li:hover {
+    background-repeat: no-repeat;
+    filter: brightness(0.7);
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    padding: 0 0.8rem;
+    color: rgb(168, 168, 199);
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.credit {
+    font-size: 1rem;
+    padding: 1rem 0;
+    letter-spacing: 0.5px;
+}
+
+.credit>a {
+    font-weight: bold;
+}
